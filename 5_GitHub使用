@@ -1,0 +1,30 @@
+远程库链接：  https://github.com/Jack-J2000/Git-Demo.git
+
+SSH和HTTPS可选一个
+远程仓库操作：
+查看当前所有远程地址别名：git remote -v
+起别名：git remote add 别名 远程地址
+推送本地分支上的内容到远程仓库：git push 别名/远程库的链接 分支
+将远程仓库的内容推送到本地：git clone 远程地址
+将远程仓库对于分支最新内容拉下来后与当前本地分支直接合并：git pull 远程库地址别名 远程分支名
+
+从远程库拉取到本地库：git pull 别名 分支
+从远程库克隆到本地库：git clone 远程地址
+clone 会做以下操作：1.拉取代码  2.初始化本地库  3.创建别名(origin)
+
+注意：想要改变github使用的主体用户(切换GitHub账号)，需要先删除凭据管理器里的Windows凭据中的GitHub凭据
+
+如果是让其他远程库的大佬(东方不败)帮忙修改代码(跨团队合作)：需要使用fork，将代码叉到自己的远程库里，然后进行操作
+                                                                                            修改完成后，通过pull request，发送给另一远程库(岳不群)
+
+
+设置SSH免密登录：ssh-keygen -t rsa -C 用户邮箱               (输入完成后，enter3次)
+再进入C:\Users\hp，看到出现了.ssh文件，里面有公钥和私钥
+把公钥复制到github账号里
+成功后就可以在git中，使用ssh来pull文件
+
+
+
+
+
+

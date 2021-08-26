@@ -1,0 +1,23 @@
+###配置Git忽略文件###
+1.为什么要忽略？
+答：有些文件与项目的实际功能无关，不参与服务器上部署运行。
+      把它们忽略掉能够屏蔽IDE工具之间的差异
+
+2.怎么忽略？
+(1)创建忽略规则文件 xxxx.ignore(文件名随便，后缀为ignore)，
+    里面写上要忽略的文件类型
+    建议放在家目录下  C:\Users\hp
+
+(2)在.gitconfig 文件中引用忽略配置文件(此文件在家目录下)
+[core]
+    excludesfile = xxxx.ignore文件存放路径
+     注意：这里的路径要使用"正斜线(/)"，不要使用“反斜线(\)”
+
+###定位Git程序(在IDEA端配置)###
+1.在IDEA里找到Git，定位到git安装路径下的bin文件夹里的git.exe
+2.在IDEA上方的VCS(version control setting)，点create Git Repository，点OK，该项目就被Git接管了
+
+###切换版本###
+在IDEA左下角Git里进行操作
+
+###创建分支###

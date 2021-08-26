@@ -1,0 +1,43 @@
+设置用户签名(用来区分操作者身份)：git config --global user,name  用户名
+                      git config --global user,email  邮箱
+
+如果首次安装Git，必须设置，不然提交代码会报错
+git config --global user.name Jack
+git config --global user.email Jack@jsy.com
+设置成功后可在，C:\Users\hp  找到.gitconfig 文件
+
+初始化本地库：git init                (执行后下一行出现master)
+接下来就可以使用：
+ll  查看文件
+ll -a  查看隐藏文件
+cd .git/   进入git
+等等命令均与linux类似
+
+查看本地库状态：git status
+cat  查看文件内容
+
+添加到暂存区：git add  文件名
+从暂存区删除文件：git rm --cached 文件名
+删除工作区文件：rm 文件名
+
+提交到本地库(形成历史版本)：git commit -m "日志信息"  文件名
+
+查看版本信息：git reflog
+查看详细版本信息：git log
+
+修改文件：在修改文件后再查看本地库状态，出现  红色的modified(被修改)
+                把修改的文件添加到暂存区中，本地库出现 绿色的modified
+
+
+版本穿梭：git reset --hard 版本号
+Git切换版本，底层其实是移动的 HEAD 指针
+
+
+
+
+
+
+
+
+
+
