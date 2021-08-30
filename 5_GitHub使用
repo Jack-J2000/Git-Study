@@ -3,6 +3,7 @@
 SSH和HTTPS可选一个
 远程仓库操作：
 查看当前所有远程地址别名：git remote -v
+删除一个remote: git remote remove <name>
 起别名：git remote add 别名 远程地址
 推送本地分支上的内容到远程仓库：git push 别名/远程库的链接 分支
 将远程仓库的内容推送到本地：git clone 远程地址
